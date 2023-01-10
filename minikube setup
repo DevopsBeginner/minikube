@@ -1,0 +1,26 @@
+Minikube installation setup
+---------------------------
+
+Step1: To install the latest minikube stable release on linux, copy the below command and paste it on your server
+
+# curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+
+Step2: Start your cluster
+
+From the server (but not logged in as root)
+
+# minikube start 
+
+If minikube fails to start aplly the below command
+
+#sudo usermod -aG docker $USER && newgrp docker'
+
+Now it will work 
+
+ # minikube start
+
+Now you can interact with cluster
+
+# kubectl get pods
