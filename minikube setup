@@ -20,7 +20,11 @@ If minikube fails to start aplly the below command
 Now it will work 
 
  # minikube start
+ 
+ Now install kubectl
+ 
+ # sudo snap install kubectl --classic
 
-Now you can interact with cluster
+Now you can interact with cluster using kubectl
 
 # kubectl get pods
