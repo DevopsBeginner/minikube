@@ -6,6 +6,8 @@ Step1: To install the latest minikube stable release on linux, copy the below co
 # curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
+here we need docker to be installed in the server before using--apt installdocker.io
+and it worked on t2.medium ,installation needs 2 cpus,2 gp space
 
 Step2: Start your cluster
 
@@ -15,7 +17,7 @@ From the server (but not logged in as root)
 
 If minikube fails to start aplly the below command
 
-#sudo usermod -aG docker $USER && newgrp docker'
+#sudo usermod -aG docker $USER && newgrp docker
 
 Now it will work 
 
